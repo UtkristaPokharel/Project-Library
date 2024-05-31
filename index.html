@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Library</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="maincontainer">
+		<div class="header">
+			<img src="image/openbook.png" width="43px" height="43px">
+			<h1>My Library</h1>
+		</div>
+		<div class="add">
+			<button id="addbook-btn">
+				<img src="image/addbtn.png " width="20px" height="20px">
+				<p>Add a book</p>
+			</button>
+		</div>
+		<section class="bookCardContainer" id="bookCardContainer">
+			<div id="formmodel" class="formoverlay">
+				<div class="formcontainer">
+					<div class="closeBtn">&times;</div>
+					<p>Add a Book</p>
+					<form class="form" id="bookForm" action="/action_page.php">
+						<div class="formInput">
+							<label for="title">Title of a Book:</label>
+							<input type="text" id="title" name="title">
+						</div>
+						<div class="formInput">
+							<label for="author">Author Name:</label>
+							<input type="text" id="author" name="Author">
+						</div>
+						<div class="formInput">
+							<label for="pages">Pages:</label>
+							<input type="text" id="pages" name="Pages">
+							<label for="pages">Already Read ?</p>
+						</div>
+						<div class="checkboxContainer">
+							<div class="checkbox">
+								<input type="checkbox" id="checkboxYes" name="Yes">
+								<label for="read">Yes</label>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkboxNo" name="No">
+								<label for="read">No</label>
+							</div>
+						</div>
+						<br>
+						<button id="addbookbtn" alt="Submit">
+							<img src="image/addbtn.png" width="20" height="20">
+							<p>Add Book</p>
+						</button>
+
+					</form>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
