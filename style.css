@@ -28,6 +28,7 @@ body {
 }
 
 .header {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
@@ -201,13 +202,20 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 350px;
-	/* width: fit-content; */
 	border-radius: 10px;
 	background-color: #f9f9f9;
 	border: solid 2px #404040;
 	position: relative;
 	margin: 13% auto;
 	padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+	.formcontainer {
+		right: 10px;
+		width: 290px;
+	}
 }
 
 .form {
@@ -230,6 +238,12 @@ input[type="text"] {
 	border-radius: 5px;
 	height: 35px;
 	padding-left: 10px;
+}
+
+@media (max-width: 700px) {
+	input[type="text"] {
+		width: 280px;
+	}
 }
 
 .checkboxContainer {
@@ -269,4 +283,10 @@ p {
 	border-radius: 20px;
 	border: solid 2px #6a5656;
 	background-color: rgb(255, 210, 0);
+}
+
+@media (max-width: 700px) {
+	#addbookbtn{
+		width: 320px;
+	}
 }
